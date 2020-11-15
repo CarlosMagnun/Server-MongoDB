@@ -1,0 +1,31 @@
+### Buscando todos os dados do mongo
+GET http://localhost:3000/networks
+
+### Buscando todos os dados do mongo por ID
+GET http://localhost:3000/networks/5fb13ec03fce3065b893434d
+
+### Inserindo dados no banco do mongo
+POST http://localhost:3000/networks
+Content-Type: application/json
+
+{
+    "userName": "casa",
+    "userDesc": "Rede de teste 03",
+    "userOrgs": "org1, org4",
+    "userNos": "Nó 232217",
+    "userChannel": "32132"
+}
+### Deletando dados do mongo
+DELETE http://localhost:3000/networks/5fb13fa63fce3065b893434f
+
+###Atulizando dados do mongo
+PATCH  http://localhost:3000/networks/5fb13ec03fce3065b893434d
+Content-Type: application/json
+
+{
+    "userName": "jose",
+    "userDesc": "Rede de teste 03",
+    "userOrgs": "org1, org4",
+    "userNos": "Nó 232217",
+    "userChannel": "32132"
+}
